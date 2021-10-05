@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-color: grey;
+  z-index: -1;
+  padding-top: 80px;
+  background-image: url("/images/cubes.png");
+}
+
+header h2 {
+  margin: 0;
+  color: white;
+}
+
+header span {
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+}
+
+header img {
+  height: 160px;
+}
