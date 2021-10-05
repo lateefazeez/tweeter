@@ -7,6 +7,8 @@ $(document).ready(function() {
     // Make counter turn red color when input length is more than 140
     if (tweetLength > 140) {
       $counter.addClass("red");
+    } else {
+      $counter.removeClass("red");
     }
     $counter.val(countDown);
     
