@@ -1,0 +1,21 @@
+#tweet-text {
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid grey;
+  outline: none;
+}
+
+.tweet-control {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+}
+
+button {
+  background-color: #4056a1;
+  color: whitesmoke;
+}
+
+label {
+  font-weight: bold;
+}
