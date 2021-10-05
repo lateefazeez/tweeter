@@ -1,0 +1,43 @@
+.tweet {
+  margin: 2em 0;
+  border: 4px solid grey;
+  padding: 0.5em;
+}
+
+.tweet:hover {
+  box-shadow: 10px 10px lightgrey;
+}
+
+.tweet header {
+  margin: 0.5em;
+  display: flex;
+}
+
+.tweet header i {
+  font-size: 200%;
+}
+
+.tweet header h4 {
+  margin: 0.5em;
+  font-weight: normal;
+}
+
+.tweet footer {
+  border-top: 4px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet footer h6 {
+  margin: 0.5em;
+}
+
+.tweet footer i {
+  font-size: 70%;
+  color: #4056a1;
+  cursor: pointer;
+}
+
+.tweet footer i:hover {
+  color: tomato;
+}
