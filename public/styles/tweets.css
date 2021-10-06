@@ -18,8 +18,8 @@
   display: flex;
 }
 
-.tweet header i {
-  font-size: 200%;
+.tweet header img {
+  height: 100%;
 }
 
 .tweet header h4 {
