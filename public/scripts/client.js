@@ -23,11 +23,27 @@ $(() => {
 
   $("form").on("submit", function(e) {
     e.preventDefault();
+    const $inputField = $(this).children("#tweet-text");
+
+    //Validation => ESLint does not allow prompt so I used Display instead
+    //display an error for validation when no tweets or tweets more than 140 characters
+    if ($inputField.val() === "" || $inputField.val() === null) {
+      const $error = $("<h4>Your tweet is empty, please write a tweet</h4>");
+      $error.addClass("red");
+      $("#error").append($error);
+      return;
+    } else if ($inputField.val().length > 140) {
+      const $error = $("<h4>Only 140 characters are allowed as tweets, please adjust your tweet</h4>");
+      $error.addClass("red");
+      $("#error").append($error);
+      return;
+    }
     const $data = $(this).serialize();
+    console.log($data.text);
     // console.log("RAW DATA: ", $(this).serialize());
-    const $inputFiled = $(this).children("#tweet-text");
-    $inputFiled.val("");
-    $inputFiled.focus();
+    $("#error").children("h4").remove();
+    $inputField.val("");
+    $inputField.focus();
     $.ajax({
       url: "/tweets",
       method: "POST",
