@@ -35,6 +35,10 @@
       type="text/javascript"
       src="/scripts/compose-char-counter.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer.js"
+    ></script>
 
     <!-- Font Awesome -->
     <link
@@ -56,9 +60,9 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav id="nav">
       <span>tweeter</span>
-      <div class="nav-right">
+      <div class="nav-right" id="nav-rights">
         <p><strong>Write</strong> a new tweet</p>
         <i class="fas fa-angle-double-down"></i>
       </div>
@@ -94,6 +98,9 @@
           </h4>
         </form>
       </section>
+      <div id="scroll-container"></div>
+        <div id="move-up"><i class="fas fa-angle-double-up"></i></div>
+      </div>
       <section id="tweet-container"></section>
       <footer></footer>
     </main>

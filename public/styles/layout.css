@@ -32,6 +32,26 @@ body {
 .red {
   color: red;
 }
+
+#move-up {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 4em;
+  bottom: 0.5em;
+  right: 0.5em;
+  background-color: red;
+  border-radius: 50%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#move-up .fas {
+  color: white;
+  font-size: 140%;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

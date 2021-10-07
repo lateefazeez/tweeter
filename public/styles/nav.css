@@ -11,14 +11,14 @@ nav {
 
 nav span {
   font-family: "Bungee", sans-serif;
-  margin-top: 2em;
+  margin-top: 1.5em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
 nav p {
   margin-bottom: 0.5em;
-  margin-top: 2em;
+  margin-top: 1.5em;
   cursor: pointer;
 }
 
@@ -33,11 +33,11 @@ nav i {
   align-items: center;
 }
 
-.fas {
+nav .fas {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
-.fas {
+nav .fas {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
