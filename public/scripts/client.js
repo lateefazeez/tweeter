@@ -17,7 +17,6 @@ $(() => {
       method: "GET"
     })
       .then(data => {
-        console.log(data);
         renderTweets(data);
       })
       .catch(err => console.log(err));
@@ -57,7 +56,6 @@ $(() => {
     })
       .then(data => {
         loadTweets();
-        console.log(data);
       })
       .catch(error => console.log(error));
   });
