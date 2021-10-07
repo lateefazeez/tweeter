@@ -59,7 +59,7 @@ $(() => {
   
   const createTweetElement = (tweet) => {
     const $tweet = $(`<article class="tweet"></article>`);
-    const $header = $(`<header><div><img href="${tweet.user.avatars}"><h4>${tweet.user.name}</h5></div><p>${tweet.user.handle}</p></header>`);
+    const $header = $(`<header><div><img src="${tweet.user.avatars}"><h4>${tweet.user.name}</h5></div><p>${tweet.user.handle}</p></header>`);
     const $content = $(`<div><h4>${tweet.content.text}</h4></div>`);
     const $footer = $(`<footer><h6>${timeago.format(tweet.created_at)}</h6><div><i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i><i class="fas fa-heart"></i></div></footer>`);
