@@ -81,11 +81,18 @@
         <form action="/tweets" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div id="error"></div>
           <div class="tweet-control">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
+          <h4 id="emptyTweet">
+            <i class="fas fa-exclamation-triangle"></i> Your tweet is empty,
+            please write a tweet
+          </h4>
+          <h4 id="charLimit">
+            <i class="fas fa-exclamation-triangle"></i>
+            Only 140 characters are allowed as tweets, please adjust your tweet
+          </h4>
         </form>
       </section>
       <section id="tweet-container"></section>

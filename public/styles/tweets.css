@@ -52,3 +52,13 @@
 .tweet footer i:hover {
   color: tomato;
 }
+
+#emptyTweet {
+  color: red;
+  display: none;
+}
+
+#charLimit {
+  color: red;
+  display: none;
+}
