@@ -24,6 +24,12 @@ $(() => {
   };
   loadTweets();
 
+  $(".nav-right").on("click", function() {
+    $("#compose").toggle("slow");
+    const $inputField = $("form").children("#tweet-text");
+    $inputField.focus();
+  });
+
   $("form").on("submit", function(e) {
     e.preventDefault();
     const $inputField = $(this).children("#tweet-text");

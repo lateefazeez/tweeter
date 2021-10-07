@@ -1,8 +1,13 @@
+.new-tweet {
+  display: none;
+}
+
 #tweet-text {
   width: 100%;
   border: none;
   border-bottom: 4px solid grey;
   outline: none;
+  background-color: #f4f1ec;
 }
 
 .tweet-control {
