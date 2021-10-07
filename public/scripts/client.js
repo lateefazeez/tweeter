@@ -16,7 +16,10 @@ $(() => {
       url: url,
       method: "GET"
     })
-      .then(data => renderTweets(data))
+      .then(data => {
+        console.log(data);
+        renderTweets(data);
+      })
       .catch(err => console.log(err));
   };
   loadTweets();
@@ -39,8 +42,6 @@ $(() => {
       return;
     }
     const $data = $(this).serialize();
-    console.log($data.text);
-    // console.log("RAW DATA: ", $(this).serialize());
     $("#error").children("h4").remove();
     $inputField.val("");
     $inputField.focus();
@@ -49,12 +50,15 @@ $(() => {
       method: "POST",
       data: $data
     })
-      .then(data => console.log(data))
+      .then(data => {
+        loadTweets();
+        console.log(data);
+      })
       .catch(error => console.log(error));
   });
 
   const renderTweets = (tweets) => {
-    return tweets.map(tweet => $("#tweet-container").append(createTweetElement(tweet)));
+    return tweets.forEach(tweet => $("#tweet-container").prepend(createTweetElement(tweet)));
   };
   
   const createTweetElement = (tweet) => {
