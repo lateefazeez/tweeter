@@ -19,6 +19,7 @@ $(() => {
   };
   loadTweets();
 
+  //fetch only the last tweet to be called when making ajax post request
   const loadLastTweet = () => {
     const url = "http://localhost:8080/tweets";
 
