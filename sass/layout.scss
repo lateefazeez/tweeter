@@ -83,6 +83,8 @@ body {
   body {
     display: flex;
     justify-content: space-between;
+    max-width: 1420px;
+    margin: 0 auto;
   }
 
   .container {
