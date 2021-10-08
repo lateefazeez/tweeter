@@ -19,6 +19,20 @@ $(() => {
   };
   loadTweets();
 
+  const loadLastTweet = () => {
+    const url = "http://localhost:8080/tweets";
+
+    //fetch all tweets from the tweets page route
+    $.ajax({
+      url: url,
+      method: "GET"
+    })
+      .then(data => {
+        renderTweets([data[data.length - 1]]);
+      })
+      .catch(err => console.log(err));
+  };
+
   $("form").on("submit", function(e) {
     e.preventDefault();
     const $inputField = $(this).children("#tweet-text");
@@ -46,14 +60,14 @@ $(() => {
     $inputField.val("");
     $inputField.focus();
     $counter.val(140);
-
+    
     $.ajax({
       url: "/tweets",
       method: "POST",
       data: $data
     })
       .then(data => {
-        loadTweets();
+        loadLastTweet();
       })
       .catch(error => console.log(error));
   });
