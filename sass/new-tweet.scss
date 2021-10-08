@@ -1,0 +1,40 @@
+$font-stack: "Bungee", sans-serif;
+$background-color: #f4f1ec;
+$font-size: 24px;
+$red-background: red;
+$body-text: #545149;
+$transparent-background: rgba(0, 0, 0, 0);
+$white-text: #fff;
+$nav-background: #4056a1;
+$header-color: grey;
+$white-smoke: whitesmoke;
+
+.new-tweet {
+  display: none;
+}
+
+#tweet-text {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid $header-color;
+  outline: none;
+  background-color: $background-color;
+  font-weight: bold;
+  color: $body-text;
+}
+
+.tweet-control {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-stack;
+}
+
+button {
+  background-color: $nav-background;
+  color: $white-smoke;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+}

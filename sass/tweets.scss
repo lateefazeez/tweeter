@@ -1,11 +1,24 @@
+$font-stack: "Bungee", sans-serif;
+$background-color: #f4f1ec;
+$font-size: 24px;
+$red-background: red;
+$body-text: #545149;
+$transparent-background: rgba(0, 0, 0, 0);
+$white-text: #fff;
+$nav-background: #4056a1;
+$header-color: grey;
+$white-smoke: whitesmoke;
+$light-grey: lightgrey;
+$tomato-color: tomato;
+
 .tweet {
   margin: 1.5em 0;
-  border: 3px solid grey;
+  border: 3px solid $header-color;
   padding: 0.5em;
 }
 
 .tweet:hover {
-  box-shadow: 10px 10px lightgrey;
+  box-shadow: 10px 10px $light-grey;
 }
 
 .tweet header {
@@ -31,7 +44,7 @@
 .tweet header p {
   align-self: flex-end;
   font-weight: bold;
-  color: lightgrey;
+  color: $light-grey;
 }
 
 .content {
@@ -39,7 +52,7 @@
 }
 
 .tweet footer {
-  border-top: 3px solid grey;
+  border-top: 3px solid $header-color;
   display: flex;
   justify-content: space-between;
 }
@@ -50,20 +63,20 @@
 
 .tweet footer i {
   font-size: 70%;
-  color: #4056a1;
+  color: $nav-background;
   cursor: pointer;
 }
 
 .tweet footer i:hover {
-  color: tomato;
+  color: $tomato-color;
 }
 
 #emptyTweet {
-  color: red;
+  color: $red-background;
   display: none;
 }
 
 #charLimit {
-  color: red;
+  color: $red-background;
   display: none;
 }

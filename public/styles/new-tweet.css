@@ -8,6 +8,8 @@
   border-bottom: 3px solid grey;
   outline: none;
   background-color: #f4f1ec;
+  font-weight: bold;
+  color: #545149;
 }
 
 .tweet-control {
@@ -19,6 +21,7 @@
 button {
   background-color: #4056a1;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 label {

@@ -1,32 +1,49 @@
+$font-stack: "Bungee", sans-serif;
+$backgroud-color: #f4f1ec;
+$font-size: 24px;
+$red-background: red;
+$body-text: #545149;
+$transparent-background: rgba(0, 0, 0, 0);
+$white-text: #fff;
+$nav-background: #4056a1;
+
+@mixin vertical-align($align-vertical: center) {
+  align-items: $align-vertical;
+}
+
 nav {
   display: flex;
   position: fixed;
   justify-content: space-between;
   height: 120px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  background-color: $transparent-background;
+  color: $white-text;
   padding: 0 1.5em;
 }
 
-nav span {
-  font-family: "Bungee", sans-serif;
-  margin-top: 1.5em;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-nav p {
-  margin-bottom: 0.5em;
-  margin-top: 1.5em;
-  cursor: pointer;
-}
-nav i {
-  color: red;
-  cursor: pointer;
+nav {
+  span {
+    font-family: $font-stack;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+    cursor: pointer;
+  }
+
+  i {
+    color: $red-background;
+    cursor: pointer;
+  }
 }
 
 .nav-right {
-  align-items: center;
+  @include vertical-align;
   display: flex;
   flex-direction: column;
 }
@@ -35,12 +52,10 @@ nav .fas {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
-
 nav .fas {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
-
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);
@@ -57,8 +72,9 @@ nav .fas {
     transform: translateY(-10px);
   }
 }
+
 @media only screen and (min-width: 1024px) {
   nav {
-    background-color: #4056a1;
+    background-color: $nav-background;
   }
 }

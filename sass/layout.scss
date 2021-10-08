@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -16,21 +15,28 @@ html {
 /*
  * Global layout stuff
  */
+
+$font-stack: "Source Sans Pro", sans-serif;
+$backgroud-color: #f4f1ec;
+$font-size: 24px;
+$red-background: red;
+$body-text: #545149;
+
 body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  color: $body-text;
+  background-color: $backgroud-color;
+  font-size: $font-size;
+  font-family: $font-stack;
 }
 
 .container {
   width: 90%;
   margin: 2em auto;
-  background-color: #f4f1ec;
+  background-color: $backgroud-color;
 }
 
 .red {
-  color: red;
+  color: $red-background;
 }
 
 #move-up {
@@ -42,7 +48,7 @@ body {
   width: 4em;
   bottom: 0.5em;
   right: 0.5em;
-  background-color: red;
+  background-color: $red-background;
   border-radius: 50%;
   visibility: hidden;
   cursor: pointer;
@@ -52,17 +58,14 @@ body {
   /* Chrome/Opera/Safari */
   font-weight: bold;
 }
-
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-weight: bold;
 }
-
 :-ms-input-placeholder {
   /* IE 10+ */
   font-weight: bold;
 }
-
 :-moz-placeholder {
   /* Firefox 18- */
   font-weight: bold;
@@ -72,10 +75,10 @@ body {
   color: white;
   font-size: 140%;
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 @media only screen and (min-width: 1024px) {
   body {
     display: flex;
@@ -85,6 +88,6 @@ body {
   .container {
     width: 50%;
     margin: 10em 2em;
-    background-color: #f4f1ec;
+    background-color: $backgroud-color;
   }
 }

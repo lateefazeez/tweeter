@@ -1,12 +1,26 @@
+$font-stack: "Bungee", sans-serif;
+$backgroud-color: #f4f1ec;
+$font-size: 24px;
+$red-background: red;
+$body-text: #545149;
+$transparent-background: rgba(0, 0, 0, 0);
+$white-text: #fff;
+$nav-background: #4056a1;
+$header-color: grey;
+
+@mixin vertical-align($align-vertical: center) {
+  align-items: $align-vertical;
+}
+
 .user {
-  align-items: center;
+  @include vertical-align;
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   height: 400px;
   width: 100%;
-  background-color: grey;
+  background-color: $header-color;
   z-index: -1;
   padding-top: 80px;
   background-image: url("/images/cubes.png");
@@ -19,7 +33,7 @@ header h2 {
 
 header span {
   margin: 0;
-  color: #fff;
+  color: $white-text;
   font-weight: lighter;
 }
 
@@ -36,19 +50,19 @@ header img {
     align-items: center;
     width: 35%;
     height: 400px;
-    background-color: grey;
+    background-color: $header-color;
     background-image: url("/images/cubes.png");
     margin: 10em 2em;
     padding-top: 1em;
   }
 
   header h2 {
-    color: #fff;
+    color: $white-text;
     margin-bottom: 1em;
   }
 
   header span {
-    color: #fff;
+    color: $white-text;
     font-weight: lighter;
   }
 

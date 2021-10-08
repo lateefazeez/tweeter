@@ -26,6 +26,7 @@ $(() => {
   $("form").on("submit", function(e) {
     e.preventDefault();
     const $inputField = $(this).children("#tweet-text");
+    let $counter = $(this).children(".tweet-control").children(".counter");
 
     //Validation => ESLint does not allow prompt so I used Display instead
     //display an error for validation when no tweets or tweets more than 140 characters
@@ -48,6 +49,7 @@ $(() => {
     const $data = $(this).serialize();
     $inputField.val("");
     $inputField.focus();
+    $counter.val(140);
 
     $.ajax({
       url: "/tweets",
@@ -70,7 +72,7 @@ $(() => {
     const $tweet = $(`<article class="tweet"></article>`);
 
     //create the tweet header
-    const $header = $(`<header><div><img src="${tweet.user.avatars}"><h4>${tweet.user.name}</h5></div><p>${tweet.user.handle}</p></header>`);
+    const $header = $(`<header><div><img src="${tweet.user.avatars}"><h5>${tweet.user.name}</h5></div><p>${tweet.user.handle}</p></header>`);
 
     //create the tweet content, preventing XSS
     const $content = $('<h5 class="content"></h5>').text(tweet.content.text);
