@@ -11,6 +11,14 @@ This project is a single-page AJAX-based Twitter clone that uses jQuery, HTML5 a
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+## Final Product
+
+!["screenshot of Desktop View"](https://github.com/lateefazeez/tweeter/blob/master/docs/desktop-view.png?raw=true)
+
+!["screenshot of a Mobile View Before Scrolling"](https://github.com/lateefazeez/tweeter/blob/master/docs/mobile-view-unscrolled.png?raw=true)
+
+!["screenshot of a Mobile View when scrolled"](https://github.com/lateefazeez/tweeter/blob/master/docs/mobile-view-scrolled.png?raw=true)
+
 ## Dependencies
 
 - Express
