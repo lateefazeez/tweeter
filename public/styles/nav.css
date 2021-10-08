@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   height: 120px;
   width: 100%;
-  background-color: #4056a1;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   padding: 0 1.5em;
 }
@@ -55,5 +55,11 @@ nav .fas {
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056a1;
   }
 }

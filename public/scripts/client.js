@@ -73,7 +73,7 @@ $(() => {
     const $header = $(`<header><div><img src="${tweet.user.avatars}"><h4>${tweet.user.name}</h5></div><p>${tweet.user.handle}</p></header>`);
 
     //create the tweet content, preventing XSS
-    const $content = $("<div></div>").append($("<h4></h4>").text(tweet.content.text));
+    const $content = $('<h5 class="content"></h5>').text(tweet.content.text);
 
     //create the tweet footer elements
     const $footer = $(`<footer><h6>${timeago.format(tweet.created_at)}</h6><div><i class="fas fa-flag"></i>

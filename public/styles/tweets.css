@@ -1,6 +1,6 @@
 .tweet {
   margin: 2em 0;
-  border: 4px solid grey;
+  border: 3px solid grey;
   padding: 0.5em;
 }
 
@@ -9,7 +9,8 @@
 }
 
 .tweet header {
-  margin: 0.5em;
+  margin: 0.5em 0.5em 0 0.5em;
+  padding-bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -19,7 +20,7 @@
 }
 
 .tweet header img {
-  height: 100%;
+  height: 60%;
 }
 
 .tweet header h4 {
@@ -33,8 +34,12 @@
   color: lightgrey;
 }
 
+.content {
+  margin-top: 0;
+}
+
 .tweet footer {
-  border-top: 4px solid grey;
+  border-top: 3px solid grey;
   display: flex;
   justify-content: space-between;
 }

@@ -26,3 +26,33 @@ header span {
 header img {
   height: 160px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .user {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    height: 400px;
+    background-color: grey;
+    background-image: url("/images/cubes.png");
+    margin: 10em 2em;
+    padding-top: 1em;
+  }
+
+  header h2 {
+    color: white;
+    margin-bottom: 1em;
+  }
+
+  header span {
+    color: white;
+    font-weight: lighter;
+  }
+
+  header img {
+    height: 256px;
+  }
+}
