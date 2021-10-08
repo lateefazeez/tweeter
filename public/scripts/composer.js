@@ -6,11 +6,6 @@ $(() => {
     $inputField.focus();
   };
 
-  const showNavBar = () => {
-    $("#nav-rights").css("display", "flex");
-    $("#nav").css("background-color", "#4056a1");
-  };
-
   //toggle the new-tweet textarea
   $("#nav-rights").on("click", function() {
     showTextArea();
@@ -22,11 +17,11 @@ $(() => {
     // $("#nav").css("background-color", "rgba(0, 0, 0, 0)");
   });
 
+  //move back up on scrtoll and show the input form
   $("#move-up").on("click", () => {
     $("#move-up").css("visibility", "hidden");
     $("html").animate({scrollTop:0}, "slow");
     showTextArea();
-   
   });
 
 });
